@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Pro — AI Resume Builder & 1-Click Apply</title>
+  <meta name="description"
+    content="Create an ATS-optimized resume and apply to top jobs with 1-click AI applications. Built for all roles and industries.">
+
+  <!-- Google Fonts: Inter, Outfit, Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Top Right Header Tagline -->
+  <aside class="top-tagline-wrap" aria-label="Tagline">
+    <span class="tagline-text">REAL RESUMES. 1-CLICK APPLICATIONS. A BRIGHTER YOU.</span>
+    <span class="tagline-rule"></span>
+  </aside>
+
+  <!-- Main Viewport Layout -->
+  <main class="showcase-viewport">
+
+    <!-- LEFT SIDEBAR: Vertical Stepper 01 - 02 -->
+    <nav class="vertical-stepper" aria-label="Resume Pro Steps">
+
+      <!-- Step 01: RESUME BUILDER -->
+      <div class="stepper-item active" data-step="1" id="step-node-1">
+        <div class="stepper-node-wrap">
+          <div class="node-ring">
+            <span class="node-dot"></span>
+          </div>
+          <div class="node-glow-halo"></div>
+        </div>
+        <div class="stepper-label">
+          <span class="step-num">01</span>
+          <span class="step-title">RESUME<br>BUILDER</span>
+        </div>
+      </div>
+
+      <div class="stepper-connector active-connector" id="connector-1-2"></div>
+
+      <!-- Step 02: 1-CLICK APPLY -->
+      <div class="stepper-item" data-step="2" id="step-node-2">
+        <div class="stepper-node-wrap">
+          <div class="node-ring idle-ring">
+            <span class="node-dot idle-dot"></span>
+          </div>
+        </div>
+        <div class="stepper-label">
+          <span class="step-num">02</span>
+          <span class="step-title">1-CLICK<br>APPLY</span>
+        </div>
+      </div>
+
+    </nav>
+
+    <!-- LEFT CONTENT AREA: Title, Subtitle, Highlights -->
+    <section class="hero-left-content">
+
+      <!-- Counter Badge -->
+      <div class="step-counter-tag" id="stepCounterDisplay">01 / 02</div>
+
+      <!-- STEP 01 LEFT PANE: RESUME BUILDER -->
+      <div class="step-left-pane active" id="leftPaneStep1">
+        <!-- Main Headline (Strictly 2 lines) -->
+        <h1 class="main-hero-title">
+          <span class="title-white">RESUME</span><br>
+          <span class="title-electric-blue">BUILDER</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <h2 class="hero-subheading">
+          Create an ATS-optimized resume that gets you noticed.
+        </h2>
+
+        <!-- Description -->
+        <p class="hero-paragraph">
+          Improve every section with real-time AI feedback and get past hiring filters with total confidence.
+        </p>
+
+        <!-- 3 Key Features -->
+        <div class="hero-features-list">
+          <div class="feature-item">
+            <div class="feature-icon-box feature-icon-blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.3"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <path d="M10 13l2 2 4-4"></path>
+              </svg>
+            </div>
+            <div class="feature-text-block">
+              <span class="feature-title">AI Suggestions</span>
+              <span class="feature-desc">Improve every section with real-time AI feedback.</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon-box feature-icon-blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.3"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <div class="feature-text-block">
+              <span class="feature-title">ATS Score</span>
+              <span class="feature-desc">Know what to fix to get past filters.</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon-box feature-icon-blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.3"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+              </svg>
+            </div>
+            <div class="feature-text-block">
+              <span class="feature-title">Role-specific</span>
+              <span class="feature-desc">Tailored for your target job and industry.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 02 LEFT PANE: 1-CLICK APPLY -->
+      <div class="step-left-pane" id="leftPaneStep2">
+        <!-- Main Headline (Strictly 2 lines) -->
+        <h1 class="main-hero-title">
+          <span class="title-white">1-CLICK</span><br>
+          <span class="title-electric-blue">APPLY</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <h2 class="hero-subheading">
+          Find the right jobs, get AI applications, and apply in minutes.
+        </h2>
+
+        <!-- Description -->
+        <p class="hero-paragraph">
+          Submit role-specific resumes, customized cover letters, and auto-filled answers in seconds.
+        </p>
+
+        <!-- 3 Key Features -->
+        <div class="hero-features-list">
+          <div class="feature-item">
+            <div class="feature-icon-box feature-icon-blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.3"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <div class="feature-text-block">
+              <span class="feature-title">Smart Job Match</span>
+              <span class="feature-desc">Find roles that fit your skills and goals.</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon-box feature-icon-blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.3"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+            </div>
+            <div class="feature-text-block">
+              <span class="feature-title">AI-Prepared Application</span>
+              <span class="feature-desc">Tailored resume, cover letter, and answers for each job.</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon-box feature-icon-blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.3"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="feature-text-block">
+              <span class="feature-title">One-Click Apply</span>
+              <span class="feature-desc">Submit your application in seconds.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RIGHT 3D SHOWCASE STAGE: Tablet, Pedestal & Floating Badges -->
+    <section class="stage-3d-wrapper" id="stageWrapper">
+
+      <!-- ===================================================================
+           STAGE VIEW 01: RESUME BUILDER SHOWCASE
+           =================================================================== -->
+      <div class="step-stage-view active" id="stageViewStep1">
+
+        <!-- TOP BADGES ROW -->
+        <div class="badges-row top-badges-row">
+          <!-- Floating Badge 1: Multiple formats -->
+          <div class="floating-badge badge-1">
+            <div class="badge-icon-box blue-glow-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+            </div>
+            <div class="badge-text-col">
+              <span class="b-line">Multiple formats</span>
+              <span class="b-sub">Download PDF, DOCX</span>
+            </div>
+            <div class="badge-arrow-corner">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Floating Badge 2: Custom sections -->
+          <div class="floating-badge badge-2">
+            <div class="badge-icon-box blue-glow-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+            <div class="badge-text-col">
+              <span class="b-line">Custom sections</span>
+              <span class="b-sub">Add projects, links</span>
+            </div>
+            <div class="badge-arrow-corner">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM BADGES ROW -->
+        <div class="badges-row bottom-badges-row">
+          <!-- Floating Badge 3: Built for all roles -->
+          <div class="floating-badge badge-3">
+            <div class="badge-icon-box blue-glow-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z">
+                </path>
+              </svg>
+            </div>
+            <div class="badge-text-col">
+              <span class="b-line">Built for all roles</span>
+              <span class="b-sub">Internships to senior</span>
+            </div>
+            <div class="badge-arrow-corner">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Floating Badge 4: ATS Score 92/100 -->
+          <div class="floating-badge badge-4">
+            <div class="badge-icon-box blue-glow-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <div class="badge-text-col">
+              <span class="b-line">ATS Score: 92/100</span>
+              <span class="b-sub">Filter Optimized</span>
+            </div>
+            <div class="badge-arrow-corner">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- CENTER 3D COMPOSITION: Glowing Blue Podium + Resume Document -->
+        <div class="center-stage-container">
+          <!-- 3D Glowing Podium Base -->
+          <div class="podium-base">
+            <div class="podium-disc podium-disc-glow"></div>
+            <div class="podium-disc podium-disc-ring"></div>
+            <div class="podium-disc podium-disc-core"></div>
+          </div>
+
+          <!-- Layered Resume Showcase -->
+          <div class="resume-showcase">
+            <!-- Stacked Dark Glass Backing with Tool Dock -->
+            <div class="stacked-backing">
+              <div class="tool-dock" id="resumeToolDock">
+                <div class="dock-btn active" data-index="0" title="Document Structure">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  </svg>
+                </div>
+                <div class="dock-btn" data-index="1" title="AI Magic Optimizer">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <div class="dock-btn" data-index="2" title="Section Editor">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                  </svg>
+                </div>
+                <div class="dock-btn" data-index="3" title="Keyword Analysis">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                  </svg>
+                </div>
+                <div class="dock-btn" data-index="4" title="Format & Settings">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path
+                      d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <div class="glass-sheet sheet-2"></div>
+              <div class="glass-sheet sheet-1"></div>
+            </div>
+
+            <!-- Crisp Resume Paper -->
+            <div class="resume-card" id="resumeCard">
+              <div class="scan-laser" id="scanLaser"></div>
+
+              <div class="resume-head">
+                <div>
+                  <h2 class="name">RITESH KUMAR</h2>
+                  <p class="role">Product Manager</p>
+                </div>
+                <button class="btn-edit-ai" id="btnEditAi">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                  </svg>
+                  <span>Edit with AI</span>
+                </button>
+              </div>
+
+              <!-- Contact Bar -->
+              <div class="contact-bar">
+                <span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg> ritesh@example.com</span>
+                <span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg> +91 98765 43210</span>
+                <span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg> Bengaluru, India</span>
+                <span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg> linkedin.com/in/ritesh</span>
+              </div>
+
+              <!-- Summary -->
+              <div class="resume-sec">
+                <div class="sec-label">PROFESSIONAL SUMMARY</div>
+                <div class="skeleton-bars">
+                  <div class="bar bar-w95"></div>
+                  <div class="bar bar-w85"></div>
+                  <div class="bar bar-w60"></div>
+                </div>
+              </div>
+
+              <!-- Experience -->
+              <div class="resume-sec">
+                <div class="sec-head-row">
+                  <span class="sec-label">WORK EXPERIENCE</span>
+                  <span class="sec-date">2022 – Present</span>
+                </div>
+                <div class="exp-title">Senior Product Manager</div>
+                <div class="exp-sub">AcceleratorX</div>
+                <div class="skeleton-bars mini">
+                  <div class="bar bar-w90"></div>
+                  <div class="bar bar-w75"></div>
+                </div>
+              </div>
+
+              <!-- Skills -->
+              <div class="resume-sec skills-wrap">
+                <div class="sec-label">SKILLS</div>
+                <div class="pill-tags">
+                  <span class="skill-chip">Product Strategy</span>
+                  <span class="skill-chip">User Research</span>
+                  <span class="skill-chip">Data Analysis</span>
+                  <span class="skill-chip">Roadmapping</span>
+                  <span class="skill-chip">Stakeholder Management</span>
+                  <span class="skill-chip">SQL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Overlapping Dark ATS Score Card -->
+            <div class="ats-card" id="atsCard">
+              <div class="ats-gauge-row">
+                <div class="radial-ring">
+                  <svg viewBox="0 0 100 100" class="ring-svg">
+                    <circle class="ring-bg" cx="50" cy="50" r="42"></circle>
+                    <circle class="ring-fill" id="atsRingFill" cx="50" cy="50" r="42"></circle>
+                  </svg>
+                  <div class="ring-center">
+                    <span class="score-val" id="atsScoreVal">92</span>
+                    <span class="score-denom">/100</span>
+                  </div>
+                </div>
+                <div class="ats-status-info">
+                  <span class="ats-title">ATS Score</span>
+                  <span class="ats-pill-badge" id="atsStatusBadge">Optimized</span>
+                </div>
+              </div>
+
+              <div class="ats-checklist" id="atsChecklist">
+                <div class="check-row" data-check="0">
+                  <span class="blue-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg></span>
+                  <span>Resume structure</span>
+                </div>
+                <div class="check-row" data-check="1">
+                  <span class="blue-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg></span>
+                  <span>Content relevance</span>
+                </div>
+                <div class="check-row" data-check="2">
+                  <span class="blue-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg></span>
+                  <span>Keyword match</span>
+                </div>
+                <div class="check-row" data-check="3">
+                  <span class="blue-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg></span>
+                  <span>Impact metrics</span>
+                </div>
+                <div class="check-row" data-check="4">
+                  <span class="blue-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg></span>
+                  <span>Role alignment</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===================================================================
+           STAGE VIEW 02: 1-CLICK APPLY SHOWCASE
+           =================================================================== -->
+      <div class="step-stage-view" id="stageViewStep2">
+
+        <!-- TOP BADGES ROW -->
+        <div class="badges-row top-badges-row">
+          <!-- Floating Badge 1: Tailored for Every Job -->
+          <div class="floating-badge badge-1">
+            <div class="badge-icon-box blue-glow-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <polyline points="9 15 11 17 15 13"></polyline>
+              </svg>
+            </div>
+            <div class="badge-text-col">
+              <span class="b-line">Tailored for Every Job</span>
+              <span class="b-sub">Custom resume & answers</span>
+            </div>
+            <div class="badge-arrow-corner">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Floating Badge 2: Track Applications -->
+          <div class="floating-badge badge-2">
+            <div class="badge-icon-box blue-glow-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <div class="badge-text-col">
+              <span class="b-line">Track Applications</span>
+              <span class="b-sub">Real-time status updates</span>
+            </div>
+            <div class="badge-arrow-corner">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM BADGES ROW -->
+        <div class="badges-row bottom-badges-row">
+          <!-- Floating Badge 3: Save Hours -->
+          <div class="floating-badge badge-3">
+            <div class="badge-icon-box blue-glow-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <div class="badge-text-col">
+              <span class="b-line">Save Hours</span>
+              <span class="b-sub">Apply in minutes, not days</span>
+            </div>
+            <div class="badge-arrow-corner">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Floating Badge 4: Smart Match Algorithm -->
+          <div class="floating-badge badge-4">
+            <div class="badge-icon-box blue-glow-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <div class="badge-text-col">
+              <span class="b-line" id="badgeSmartMatch">Smart Match: 92%</span>
+              <span class="b-sub">AI Recommended</span>
+            </div>
+            <div class="badge-arrow-corner">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- CENTER 3D COMPOSITION: Dual Windows Deck -->
+        <div class="center-stage-container dual-mode">
+          <!-- 3D Glowing Podium Base -->
+          <div class="podium-base wide">
+            <div class="podium-disc podium-disc-glow"></div>
+            <div class="podium-disc podium-disc-ring"></div>
+            <div class="podium-disc podium-disc-core"></div>
+          </div>
+
+          <!-- Dual Cards Deck -->
+          <div class="dual-deck">
+
+            <!-- Card 1: Jobs for you -->
+            <div class="dark-window-card jobs-card" id="cardJobs">
+              <div class="window-header">
+                <div class="win-dots">
+                  <span class="wdot"></span>
+                  <span class="wdot"></span>
+                  <span class="wdot"></span>
+                </div>
+                <div class="win-title">Jobs for you</div>
+              </div>
+
+              <!-- Filter Pills -->
+              <div class="filter-strip">
+                <button class="pill-btn active">Remote</button>
+                <button class="pill-btn">On-site</button>
+                <button class="pill-btn">Hybrid</button>
+                <button class="pill-btn">Full-time</button>
+                <button class="icon-toggle-btn" title="Filter options">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <line x1="4" y1="21" x2="4" y2="14"></line>
+                    <line x1="4" y1="10" x2="4" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12" y2="3"></line>
+                    <line x1="20" y1="21" x2="20" y2="16"></line>
+                    <line x1="20" y1="12" x2="20" y2="3"></line>
+                    <line x1="1" y1="14" x2="7" y2="14"></line>
+                    <line x1="9" y1="8" x2="15" y2="8"></line>
+                    <line x1="17" y1="16" x2="23" y2="16"></line>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Job Rows -->
+              <div class="job-list" id="jobRowsList">
+                <!-- Google -->
+                <div class="job-row active" data-index="0" data-job="google" data-role="Product Manager" data-company="Google" data-match="92%">
+                  <div class="logo-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24">
+                      <path fill="#4285F4"
+                        d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z" />
+                      <path fill="#34A853"
+                        d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z" />
+                      <path fill="#FBBC05"
+                        d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.14-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z" />
+                      <path fill="#EA4335"
+                        d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z" />
+                    </svg>
+                  </div>
+                  <div class="row-details">
+                    <div class="role-name">Product Manager</div>
+                    <div class="company-name">Google · Bengaluru, India</div>
+                  </div>
+                  <div class="match-pill">92% match</div>
+                </div>
+
+                <!-- Microsoft -->
+                <div class="job-row" data-index="1" data-job="microsoft" data-role="AI Product Manager" data-company="Microsoft" data-match="86%">
+                  <div class="logo-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24">
+                      <rect x="1" y="1" width="10" height="10" fill="#F25022" />
+                      <rect x="13" y="1" width="10" height="10" fill="#7FBA00" />
+                      <rect x="1" y="13" width="10" height="10" fill="#00A4EF" />
+                      <rect x="13" y="13" width="10" height="10" fill="#FFB900" />
+                    </svg>
+                  </div>
+                  <div class="row-details">
+                    <div class="role-name">AI Product Manager</div>
+                    <div class="company-name">Microsoft · India</div>
+                  </div>
+                  <div class="match-pill">86% match</div>
+                </div>
+
+                <!-- Amazon -->
+                <div class="job-row" data-index="2" data-job="amazon" data-role="Product Analyst" data-company="Amazon" data-match="84%">
+                  <div class="logo-box logo-dark">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M13.5 12.8c-1.8 0-3.3.7-3.3 2.1 0 1.2 1 1.9 2.3 1.9 1.6 0 2.8-.9 3.2-1.9v-2.1h-2.2zm2.2-4.4v1.5c-.8-.9-2-1.5-3.6-1.5-2.8 0-4.9 2.1-4.9 5.1s2 5.2 5 5.2c1.7 0 2.9-.7 3.6-1.6v1.4h2.4V8.4h-2.5z"
+                        fill="#FFF" />
+                      <path
+                        d="M20.5 19.5c-4.3 2.3-9.7 2.4-14.7.4-.5-.2-.9.3-.5.7 4.5 3.3 10.4 3.4 15.6.7.7-.4.2-1.3-.4-.8z"
+                        fill="#FF9900" />
+                    </svg>
+                  </div>
+                  <div class="row-details">
+                    <div class="role-name">Product Analyst</div>
+                    <div class="company-name">Amazon · India</div>
+                  </div>
+                  <div class="match-pill">84% match</div>
+                </div>
+
+                <!-- PhonePe -->
+                <div class="job-row" data-index="3" data-job="phonepe" data-role="Growth Manager" data-company="PhonePe" data-match="80%">
+                  <div class="logo-box logo-purple">
+                    <span class="pe-glyph">पे</span>
+                  </div>
+                  <div class="row-details">
+                    <div class="role-name">Growth Manager</div>
+                    <div class="company-name">PhonePe · India</div>
+                  </div>
+                  <div class="match-pill">80% match</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: AI Prepared Application -->
+            <div class="dark-window-card app-card" id="cardApp">
+              <div class="app-card-top">
+                <span class="app-title-text">AI Prepared Application</span>
+              </div>
+
+              <!-- Sub Tabs -->
+              <div class="app-sub-tabs">
+                <button class="sub-tab-btn active" data-tab="resume">Resume</button>
+                <button class="sub-tab-btn" data-tab="cover">Cover Letter</button>
+                <button class="sub-tab-btn" data-tab="answers">Answers</button>
+              </div>
+
+              <!-- Tailored Panel Content -->
+              <div class="tailored-panel">
+                <div class="tailored-headline" id="tailoredHeadline">Tailored for Google</div>
+                <div class="skeleton-bars">
+                  <div class="bar bar-w95"></div>
+                  <div class="bar bar-w80"></div>
+                  <div class="bar bar-w60"></div>
+                </div>
+
+                <!-- 3 Checklist Items -->
+                <div class="app-checklist">
+                  <div class="app-check-row">
+                    <span class="blue-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="3">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg></span>
+                    <span id="checkRoleResumeText">Role-specific resume</span>
+                  </div>
+                  <div class="app-check-row">
+                    <span class="blue-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="3">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg></span>
+                    <span>Customized cover letter</span>
+                  </div>
+                  <div class="app-check-row">
+                    <span class="blue-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="3">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg></span>
+                    <span>Auto-filled answers</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Large Glowing CTA Button with Flying Paper Airplane -->
+              <div class="cta-wrap">
+                <button class="btn-apply-glow" id="btnApplyNow">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                  </svg>
+                  <span id="btnApplyNowText">Apply Now</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+
+                <!-- 3D Paper Airplane Accent -->
+                <div class="airplane-glow" id="airplaneGlyph">
+                  <svg width="38" height="38" viewBox="0 0 24 24" fill="none">
+                    <defs>
+                      <linearGradient id="planeBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#60a5fa" />
+                        <stop offset="100%" stop-color="#1d4ed8" />
+                      </linearGradient>
+                      <filter id="glowAir" x="-30%" y="-30%" width="160%" height="160%">
+                        <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#3b82f6" flood-opacity="0.9" />
+                      </filter>
+                    </defs>
+                    <path d="M2 12L22 2L12 22L9 15L2 12Z" fill="url(#planeBlue)" filter="url(#glowAir)" />
+                    <path d="M22 2L9 15" stroke="#ffffff" stroke-width="1.3" />
+                  </svg>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Clean Floating Toast for Feedback -->
+  <div class="clean-toast" id="cleanToast">
+    <div class="toast-indicator-dot"></div>
+    <span class="toast-text" id="cleanToastText">Application submitted successfully</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
